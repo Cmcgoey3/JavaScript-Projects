@@ -1,0 +1,1 @@
+This is a simple JavaScript number-guessing game using JavaScript for the logic functionality, simple HTML to outline the document, and CSS for style manipulation (DOM).
