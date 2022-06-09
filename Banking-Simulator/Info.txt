@@ -1,0 +1,1 @@
+This is a simply banking simulation game using JavaScript, HTML, and CSS. JacaScript is the driving force behind the program as it controls the logic and swapping between users.
