@@ -1,0 +1,1 @@
+The code for my personal website. Includes all HTML files, CSS style pages, JavaScript scripts, and content for the site.
