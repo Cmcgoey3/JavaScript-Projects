@@ -1,0 +1,330 @@
+/*
+ * Globals
+ */
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+.card:hover {
+  border-color: #dc3545;
+  border-radius: 0.5rem;
+  border-width: 0.2rem;
+}
+
+#project-bg {
+  --bs-bg-opacity: 0;
+}
+
+#contact-btn {
+  background-color: white;
+}
+
+#contact-btn:hover {
+  color: black;
+  border-color: #dc3545;
+  background-color: var(--bs-btn-hover-bg);
+}
+
+/*
+ * Base structure
+ */
+
+:root {
+  --link-size: 64px;
+  --trans-property: all 0.3s ease;
+}
+
+body {
+  background-color: #24292e;
+  color: white;
+}
+
+.body-no-scroll {
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0)),
+    url(/connor_bw.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  overflow: clip;
+}
+
+.body-scroll {
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0)),
+    url(/connor_bw.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+/*
+ * Header
+ */
+
+.card-body-position {
+  position: inherit;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.nav-bar {
+  position: relative;
+  right: -4rem;
+}
+
+.card-height {
+  height: 27em;
+}
+
+.logo {
+  position: relative;
+  top: -0.25rem;
+  left: -0.5rem;
+  height: 3rem;
+}
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgb(234, 70, 131);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: rgb(234, 70, 131);
+}
+
+.greeting {
+  text-align: left;
+}
+
+.group-left {
+  padding-right: 39rem;
+}
+
+.lead {
+  text-align: left;
+}
+
+.mb-auto {
+  margin-top: 1.1rem;
+}
+
+.mb-0 {
+  font-size: 2rem;
+}
+
+.custom-box {
+  height: 15rem;
+  width: 70rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: inherit;
+  left: -13rem;
+}
+
+.social-icons {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: clip;
+}
+.social-icon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  transition: var(--trans-property);
+}
+.social-icon i {
+  margin: auto;
+  font-size: 24px;
+  color: #67798e;
+  z-index: 1;
+  transition: var(--trans-property);
+}
+.social-icon:after {
+  content: '';
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-property);
+}
+.social-icon.github:after {
+  background-color: #24292e;
+}
+.social-icon.linkedin:after {
+  background-color: rgb(42, 102, 188);
+}
+.social-icon.instagram:after {
+  background-color: rgb(234, 70, 131);
+}
+.social-icon.facebook:after {
+  background-color: #1769ff;
+}
+/*** Animations ***/
+.social-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+}
+.social-icon:hover i {
+  color: #fff;
+}
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+
+.footing {
+  font-size: small;
+}
+
+.black-text {
+  --bs-text-opacity: 1;
+  color: black;
+  text-shadow: none;
+}
+
+.img-logo {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+  width: auto;
+  /* height: auto;
+  width: 10vmax; */
+}
+
+#center-footing {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style inputs */
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='submit'] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container-contact {
+  border-radius: 1.2rem;
+  background-color: #f2f2f2;
+  padding: 10px;
+  height: 12rem;
+  width: 40rem;
+  position: relative;
+  top: -3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 80%;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600rem) {
+  .column,
+  input[type='submit'] {
+    width: 100%;
+    margin-top: 0;
+    height: 50%;
+  }
+}
+
+#contact-me-txt {
+  position: relative;
+  bottom: -0.7rem;
+  color: #dc3545;
+  font-weight: 350;
+  text-shadow: 5px, 8px, black;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  text-decoration-color: black;
+}
+
+#email {
+  color: rgb(12, 12, 12);
+  text-shadow: none;
+  font-weight: 250;
+  font-size: x-large;
+}
+
+#email-icon {
+  height: 5rem;
+  position: relative;
+  left: -2rem;
+}
+
+#email-box {
+  position: relative;
+  right: -1rem;
+  top: -1rem;
+}
